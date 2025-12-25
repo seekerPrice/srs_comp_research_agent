@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Environment variables
+.env
+
+# Database checkpoints (LangGraph)
+checkpoints.sqlite
+checkpoints.sqlite-shm
+checkpoints.sqlite-wal
+
+# Logs
+*.log
+
+# OS specific
+.DS_Store
+Thumbs.db
