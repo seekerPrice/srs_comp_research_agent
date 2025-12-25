@@ -28,7 +28,7 @@ A robust research assistant built with LangGraph, featuring **intelligent LLM fa
 ### 1. Clone the Repository
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/seekerPrice/srs_comp_research_agent.git
 cd research_agent
 ```
 
