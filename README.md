@@ -150,3 +150,7 @@ See [writeup.md](writeup.md) for a detailed architectural overview, including:
 ---
 
 
+## Addidtional Info 
+
+For the RAG workflow, the data used is just mock data to demonstrate a simple RAG process. The whole workflow can be further improved upon request. In this case, it only stores information about the creator (myself). The main purpose is to showcase my ability to design and implement a basic RAG workflow.
+

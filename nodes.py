@@ -46,6 +46,17 @@ def planner_node(state: AgentState):
     try:
         print("\n")
         print("--- PLANNER NODE ---")
+        
+        # Debug: Show state being maintained across turns (truncated)
+        truncated_state = {
+            'topic': state.get('topic', ''),
+            'messages': str(state.get('messages', []))[:20] + '...',
+            'findings': str(state.get('findings', []))[:20] + '...',
+            'plan': str(state.get('plan', []))[:20] + '...',
+            'current_step': state.get('current_step', 0)
+        }
+        print(f"[State] {truncated_state}")
+        
         user_input = state['topic']
         messages = state.get('messages', [])
         
@@ -97,6 +108,17 @@ def researcher_node(state: AgentState):
     try:
         print("\n")
         print("--- RESEARCHER NODE ---")
+        
+        # Debug: Show state being passed
+        truncated_state = {
+            'topic': state.get('topic', ''),
+            'messages': str(state.get('messages', []))[:20] + '...',
+            'findings': str(state.get('findings', []))[:20] + '...',
+            'plan': str(state.get('plan', []))[:20] + '...',
+            'current_step': state.get('current_step', 0)
+        }
+        print(f"[State] {truncated_state}")
+        
         plan = state.get('plan', [])
         current_step = state.get('current_step', 0)
         
@@ -179,8 +201,17 @@ def responder_node(state: AgentState):
     """Synthesizes the final answer."""
     print("\n")
     print("--- RESPONDER NODE ---")
-    topic = state['topic']
-    # ...
+    
+    # Debug: Show state being passed
+    truncated_state = {
+        'topic': state.get('topic', ''),
+        'messages': str(state.get('messages', []))[:20] + '...',
+        'findings': str(state.get('findings', []))[:20] + '...',
+        'plan': str(state.get('plan', []))[:20] + '...',
+        'current_step': state.get('current_step', 0)
+    }
+    print(f"[State] {truncated_state}")
+    
     topic = state['topic']
     findings = state['findings']
     
