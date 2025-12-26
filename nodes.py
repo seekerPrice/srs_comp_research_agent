@@ -37,10 +37,6 @@ def invoke_llm_with_fallback(messages, tools=None):
         else:
              raise e
 
-# ... Update nodes to use invoke_llm_with_fallback ...
-# I will do this in chunks.
-
-
 def planner_node(state: AgentState):
     """Generates a research plan based on the topic."""
     try:
