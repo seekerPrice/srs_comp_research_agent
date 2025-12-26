@@ -16,7 +16,7 @@ def search_web(query: str) -> str:
     except Exception as e:
         return f"Graceful Error: Unable to perform web search. Details: {str(e)}"
 
-# RAG Retrieval Tool (This is just mock data)
+# RAG Retrieval Tool (This is just mock data, currently it can only answers one question: "Who is your creator?")
 def retrieve_documents(query: str) -> str:
     """Retrieves relevant documents from Pinecone. Currently, it only contains the creator’s content; other documents are not included here."""
     try:
